@@ -20,7 +20,7 @@ export const categories: Category[] = [
     name: "Spices",
     icon: Flame,
     description: "Premium whole and powdered spices sourced from the finest growing regions.",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1716816211590-c15a328a5ff0?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Red Chilli", origin: "India" },
       { name: "Red Chilli Flakes", origin: "India" },
@@ -43,7 +43,7 @@ export const categories: Category[] = [
     name: "Seeds",
     icon: Sprout,
     description: "Nutritious and aromatic seeds for culinary, health, and industrial use.",
-    image: "https://images.unsplash.com/photo-1502747192348-e8cb55dbbade?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1634582872934-be411573f235?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Mustard Seeds", origin: "India" },
       { name: "Black Cumin", origin: "India" },
@@ -69,7 +69,7 @@ export const categories: Category[] = [
     name: "Nuts & Dried Fruits",
     icon: Cookie,
     description: "Premium quality nuts and dried fruits from top global origins.",
-    image: "https://images.unsplash.com/photo-1599598425947-330026e6cb3e?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1769255485022-f9bb6d6e8169?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Cashew Nuts", origin: "Vietnam, India" },
       { name: "Peanuts", origin: "India, Argentina, Brazil" },
@@ -87,7 +87,7 @@ export const categories: Category[] = [
     name: "Grains",
     icon: Wheat,
     description: "Staple grains from certified farms across major producing nations.",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1663025293688-322e16b6cb66?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Rice", origin: "India, Vietnam, Pakistan" },
       { name: "Grain", origin: "USA, China, Russia" },
@@ -98,7 +98,7 @@ export const categories: Category[] = [
     name: "Dehydrated Products",
     icon: Salad,
     description: "Precision-dehydrated vegetables and aromatics for food manufacturing.",
-    image: "https://images.unsplash.com/photo-1628812683931-1e967a6d5108?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1760627589778-228a65c8a975?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Dehydrated Red Onion", origin: "India, China" },
       { name: "Red Onion Powder", origin: "India, China" },
@@ -115,7 +115,7 @@ export const categories: Category[] = [
     name: "Edible Oil",
     icon: Droplet,
     description: "Pure pressed edible oils for culinary and industrial applications.",
-    image: "https://images.unsplash.com/photo-1474979266404-7eaacabcd21f?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1765118527220-da9c7a560b13?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Peanut Oil", origin: "China, India, Nigeria" },
       { name: "Sunflower Oil", origin: "Ukraine, Russia, Argentina" },
@@ -127,7 +127,7 @@ export const categories: Category[] = [
     name: "Pulses",
     icon: Bean,
     description: "Protein-rich legumes and pulses from premium sourcing regions.",
-    image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e6?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1763368403529-0b8d9108cf9c?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Soyabean", origin: "USA, Brazil, Argentina" },
       { name: "Mung Bean", origin: "Venezuela" },
@@ -140,7 +140,7 @@ export const categories: Category[] = [
     name: "Food Colours",
     icon: Palette,
     description: "Vibrant, safe, and certified food-grade colouring agents.",
-    image: "https://images.unsplash.com/photo-1516053336712-4ebee09312b6?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1486548730767-5c679e8eda6b?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Food Colour", origin: "India, China, USA" },
       { name: "Colour", origin: "India, China, USA" },
@@ -151,7 +151,7 @@ export const categories: Category[] = [
     name: "Food Chemicals",
     icon: FlaskConical,
     description: "High-purity food chemicals and additives for the food processing industry.",
-    image: "https://images.unsplash.com/photo-1616474136154-15992f801f94?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1761095596584-34731de3e568?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Citric Acid", origin: "China" },
       { name: "Monosodium Glutamate (MSG)", origin: "China" },
@@ -167,7 +167,7 @@ export const categories: Category[] = [
     name: "Feed Ingredients",
     icon: Beef,
     description: "Nutritional feed ingredients for livestock and aquaculture sectors.",
-    image: "https://images.unsplash.com/photo-1504930268766-d71549a376eb?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1630095829721-5179c495f1cf?auto=format&fit=crop&w=900&q=80",
     products: [
       { name: "Soyabean Meal", origin: "USA, Brazil, Argentina" },
     ],

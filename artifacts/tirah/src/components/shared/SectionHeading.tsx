@@ -21,14 +21,18 @@ export default function SectionHeading({
       className={`flex flex-col gap-4 max-w-3xl ${align === "center" ? "mx-auto" : ""} ${alignment}`}
     >
       {overline && (
-        <span className="font-ui text-xs uppercase tracking-[0.3em] text-gold">{overline}</span>
+        <span className="font-ui text-xs sm:text-sm uppercase tracking-[0.35em] text-gold font-bold">
+          {overline}
+        </span>
       )}
       <h2 className="font-display font-light text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight">
         {title}
       </h2>
       {align === "center" && <div className="gold-divider" />}
       {subtitle && (
-        <p className="font-body italic text-lg md:text-xl text-text-secondary mt-2">{subtitle}</p>
+        <p className="font-body italic text-lg md:text-2xl text-text-secondary mt-2 font-medium">
+          {subtitle}
+        </p>
       )}
     </motion.div>
   );

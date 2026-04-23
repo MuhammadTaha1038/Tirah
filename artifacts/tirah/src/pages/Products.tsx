@@ -44,7 +44,7 @@ export default function Products() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-ui text-xs uppercase tracking-[0.4em] text-gold"
+            className="font-ui text-xs sm:text-sm uppercase tracking-[0.4em] text-gold font-bold"
           >
             The Catalog
           </motion.span>
@@ -82,10 +82,10 @@ export default function Products() {
               <div className="flex gap-2 min-w-max">
                 <button
                   onClick={() => setActiveCategory("all")}
-                  className={`px-5 py-2 rounded-full font-ui text-xs uppercase tracking-widest transition-all whitespace-nowrap ${
+                  className={`px-5 py-2 rounded-full font-ui text-xs sm:text-sm uppercase tracking-widest transition-all whitespace-nowrap ${
                     activeCategory === "all"
                       ? "bg-gold-gradient text-bg-primary font-bold"
-                      : "border border-gold text-text-secondary hover:text-gold hover:border-gold-strong"
+                      : "border border-gold text-text-secondary hover:text-gold hover:border-gold-strong font-semibold"
                   }`}
                 >
                   All
@@ -94,10 +94,10 @@ export default function Products() {
                   <button
                     key={c.id}
                     onClick={() => setActiveCategory(c.id)}
-                    className={`px-5 py-2 rounded-full font-ui text-xs uppercase tracking-widest transition-all whitespace-nowrap ${
+                    className={`px-5 py-2 rounded-full font-ui text-xs sm:text-sm uppercase tracking-widest transition-all whitespace-nowrap ${
                       activeCategory === c.id
                         ? "bg-gold-gradient text-bg-primary font-bold"
-                        : "border border-gold text-text-secondary hover:text-gold hover:border-gold-strong"
+                        : "border border-gold text-text-secondary hover:text-gold hover:border-gold-strong font-semibold"
                     }`}
                   >
                     {c.name}

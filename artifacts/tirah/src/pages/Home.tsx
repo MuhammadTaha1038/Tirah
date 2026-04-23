@@ -8,7 +8,10 @@ import AnimatedCounter from "@/components/shared/AnimatedCounter";
 import { Button } from "@/components/ui/button";
 
 const HERO_BG =
-  "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1920&q=80";
+  "https://images.unsplash.com/photo-1769255485022-f9bb6d6e8169?auto=format&fit=crop&w=1920&q=85";
+
+const IMAGE_FALLBACK =
+  "https://images.unsplash.com/photo-1769255485022-f9bb6d6e8169?auto=format&fit=crop&w=1200&q=80";
 
 const destinations = [
   { name: "Middle East", angle: -30, distance: 220 },
@@ -50,7 +53,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="font-ui text-xs md:text-sm uppercase tracking-[0.5em] text-gold font-bold"
+            className="font-ui text-xs sm:text-sm md:text-base uppercase tracking-[0.45em] text-gold font-bold"
           >
             Tirah Food Industry — Peshawar, Pakistan
           </motion.span>
@@ -61,9 +64,11 @@ export default function Home() {
             transition={{ duration: 1.2, delay: 0.2 }}
             className="font-display font-light text-5xl md:text-7xl lg:text-8xl text-text-primary leading-[1.05] tracking-tight"
           >
-            Rooted in <span className="text-gradient-gold italic">Quality.</span>
+            Premium <span className="text-gradient-gold italic">Dry Fruits</span>
             <br />
-            Grown for the <span className="text-gradient-gold italic">World.</span>
+            & <span className="text-gradient-gold italic">Nuts</span> for the World.
+            <br />
+            Delivered with <span className="text-gradient-gold italic">Trust.</span>
           </motion.h1>
 
           <motion.div
@@ -77,10 +82,10 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="font-body italic text-lg md:text-2xl text-text-secondary max-w-2xl font-medium"
+            className="font-body italic text-lg sm:text-xl md:text-2xl text-text-secondary max-w-3xl font-medium"
           >
-            Premium agricultural exports — spices, seeds, nuts, grains and oils — delivered with
-            uncompromising quality from the heart of Khyber to the world's finest kitchens.
+            Export-grade almonds, pistachios, cashews, raisins, and more — sourced with strict quality
+            control and shipped reliably for wholesale buyers worldwide.
           </motion.p>
 
           <motion.div
@@ -233,7 +238,16 @@ export default function Home() {
                     className="group flex flex-col items-center text-center bg-bg-surface border border-gold rounded-lg p-6 hover:shadow-gold-lg hover:-translate-y-1 transition-all duration-300 h-full"
                   >
                     <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border border-gold/30 shadow-md">
-                      <img src={c.image} alt={c.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                      <img
+                        src={c.image}
+                        alt={c.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
+                        onError={(e) => {
+                          const img = e.currentTarget;
+                          if (img.src !== IMAGE_FALLBACK) img.src = IMAGE_FALLBACK;
+                        }}
+                      />
                     </div>
                     <h3 className="font-display font-bold text-xl text-text-primary group-hover:text-gold transition-colors">
                       {c.name}
